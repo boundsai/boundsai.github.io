@@ -50,7 +50,7 @@
 								<h3>Lorem ipsum dolor</h3>
 								<section>
   <h4>Contact Form</h4>
-  <form method="POST" action="https://formspree.io/f/xpwlodpk?redirect=https://boundsai.github.io/index.html">
+  <form id="contact-form" method="POST">
     <div class="row gtr-uniform">
       <div class="col-6 col-12-xsmall">
         <input type="text" name="name" id="demo-name" placeholder="Name" required />
@@ -92,12 +92,39 @@
       </div>
       <div class="col-12">
         <ul class="actions">
-          <li><input type="submit" value="Send Message" class="primary" /></li>
+          <li><button type="submit" class="primary">Send Message</button></li>
           <li><input type="reset" value="Reset" /></li>
         </ul>
       </div>
     </div>
+    <p id="form-success" style="display:none; color: green;">Thanks! Your message has been sent.</p>
   </form>
+</section>
+
+<script>
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch("https://formspree.io/f/xpwlodpk", {
+      method: "POST",
+      headers: {
+        Accept: "application/json"
+      },
+      body: formData
+    });
+
+    if (response.ok) {
+      document.getElementById("form-success").style.display = "block";
+      form.reset();
+    } else {
+      alert("Oops! There was a problem submitting your form.");
+    }
+  });
+</script>
+
 </section>
 
 </section>
@@ -145,5 +172,6 @@
 	</body>
 
 </html>
+
 
 
