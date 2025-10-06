@@ -35,17 +35,12 @@
       .faculty-card h3 a {
         text-decoration: none;
       }
-      .faculty-card p {
-        margin: 0.5rem 0 0 0;
-      }
-      .faculty-card .email a {
-        text-decoration: none;
-      }
-      /* Responsive */
+      .faculty-card p { margin: 0.5rem 0 0 0; }
+      .faculty-card .email a { text-decoration: none; }
+      .links a { margin-right: 1rem; }
+      .section-title { margin-top: 2.5rem; }
       @media screen and (max-width: 980px) {
-        .faculty-card {
-          grid-template-columns: 1fr;
-        }
+        .faculty-card { grid-template-columns: 1fr; }
         .faculty-card .photo img {
           width: 100%;
           height: auto;
@@ -55,12 +50,10 @@
     </style>
   </head>
   <body class="is-preload">
-    <!-- Page Wrapper -->
     <div id="page-wrapper">
-
       <!-- Header -->
       <header id="header">
-        <h1><a href="index.html">Bogazici University Institute for Data Science & Artificial Intelligence</a></h1>
+        <h1><a href="index.html">Spectral</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
@@ -68,11 +61,10 @@
               <div id="menu">
                 <ul>
                   <li><a href="index.html">Home</a></li>
-											<li><a href="researchnews.html">Research News</a></li>
-                      <li><a href="people.html">People</a></li>
-											<li><a href="ResearchProjects.html">Research Projects</a></li>
-											<li><a href="GitHubPages.html">GitHub Pages</a></li>
-											<li><a href="form.html">Form to Share Content on the Website</a></li>
+                  <li><a href="generic.html">Faculty</a></li>
+                  <li><a href="elements.html">Elements</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                  <li><a href="#">Log In</a></li>
                 </ul>
               </div>
             </li>
@@ -90,6 +82,7 @@
         <section class="wrapper style5">
           <div class="inner">
 
+            <!-- Core Faculty -->
             <div class="faculty-grid">
 
               <!-- Şefik Şuayb Arslan -->
@@ -102,7 +95,7 @@
                   <p>
                     Ph.D., Electrical &amp; Computer Engineering, University of California, 2012<br />
                     M.S., Electrical &amp; Computer Engineering, University of California, 2009<br />
-                    B.S., Electrical &amp; Electronics Engineering, Boğaziçi University, 2006
+                    B.S., Electrical &amp; Electronics Engineering, Boğaziçi University
                   </p>
                   <p class="email">📧 <a href="mailto:suayb.arslan@bogazici.edu.tr">suayb.arslan@bogazici.edu.tr</a></p>
                 </div>
@@ -188,7 +181,53 @@
                 </div>
               </div>
 
-            </div>
+            </div> <!-- /faculty-grid -->
+
+            <!-- Affiliated Faculty -->
+            <h3 class="section-title">Affiliated Faculty</h3>
+            <div class="faculty-grid">
+
+              <!-- Mustafa Metin Başbay -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/basbay.jpeg" alt="Mustafa Metin Başbay">
+                </div>
+                <div class="info">
+                  <h3>Mustafa Metin Başbay</h3>
+                  <p>Assistant Professor</p>
+                  <p class="email">📧 <a href="mailto:metin.basbay@bogazici.edu.tr">metin.basbay@bogazici.edu.tr</a></p>
+                  <p><strong>Research Areas</strong><br>
+                    Growth and Development, Macroeconomics, Applied Econometrics
+                  </p>
+                  <p class="links">
+                    <a href="https://scholar.google.com/citations?user=3s1wAyAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar Profile</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Muhammed Furkan Akıncı -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <!-- If this doesn't load, rename to images/akinci.jpg and update src -->
+                  <img src="images/akıncı.jpg" alt="Muhammed Furkan Akıncı">
+                </div>
+                <div class="info">
+                  <h3>Muhammed Furkan Akıncı</h3>
+                  <p>Assistant Professor</p>
+                  <p class="email">📧 <a href="mailto:muhammedfurkan.akinci@bogazici.edu.tr">muhammedfurkan.akinci@bogazici.edu.tr</a></p>
+                  <p><strong>Research Areas</strong><br>
+                    Information and Technology Law, Comparative Copyright Law,
+                    Personal Data Protection Law, Sustainability and Law
+                  </p>
+                  <p class="links">
+                    <a href="https://scholar.google.com/citations?user=Q4D8LQ8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar Profile</a>
+                    <a href="https://mfa.legal/" target="_blank" rel="noopener">Personal Website</a>
+                  </p>
+                </div>
+              </div>
+
+            </div> <!-- /faculty-grid (affiliated) -->
+
           </div>
         </section>
       </article>
@@ -219,4 +258,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
