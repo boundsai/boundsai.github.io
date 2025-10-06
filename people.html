@@ -1,92 +1,220 @@
 <!DOCTYPE HTML>
 <!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Spectral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Faculty – Boğaziçi DSAI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Page-specific styles -->
+    <style>
+      .faculty-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+      }
+      .faculty-card {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 1.25rem;
+        align-items: start;
+      }
+      .faculty-card .photo img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+      .faculty-card h3 a {
+        text-decoration: none;
+      }
+      .faculty-card p {
+        margin: 0.5rem 0 0 0;
+      }
+      .faculty-card .email a {
+        text-decoration: none;
+      }
+      /* Responsive */
+      @media screen and (max-width: 980px) {
+        .faculty-card {
+          grid-template-columns: 1fr;
+        }
+        .faculty-card .photo img {
+          width: 100%;
+          height: auto;
+          max-width: 420px;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Spectral</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">Spectral</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="generic.html">Faculty</a></li>
+                  <li><a href="elements.html">Elements</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                  <li><a href="#">Log In</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Generic Page</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
+      <!-- Main -->
+      <article id="main">
+        <header>
+          <h2>Faculty</h2>
+          <p>Boğaziçi University — Data Science & Artificial Intelligence</p>
+        </header>
 
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+        <section class="wrapper style5">
+          <div class="inner">
 
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+            <div class="faculty-grid">
 
-								<hr />
+              <!-- Şefik Şuayb Arslan -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/arslan.jpg" alt="Şefik Şuayb Arslan">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/arslan.html">Prof. Dr. Şefik Şuayb Arslan, Director</a></h3>
+                  <p>
+                    Ph.D., Electrical &amp; Computer Engineering, University of California, 2012<br />
+                    M.S., Electrical &amp; Computer Engineering, University of California, 2009<br />
+                    B.S., Electrical &amp; Electronics Engineering, Boğaziçi University
+                  </p>
+                  <p class="email">📧 <a href="mailto:suayb.arslan@bogazici.edu.tr">suayb.arslan@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
+              <!-- Hüseyin Oktay Altun -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/altun.jpg" alt="Hüseyin Oktay Altun">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/altun.html">Assist. Prof. Hüseyin Oktay Altun</a></h3>
+                  <p>
+                    Ph.D., Electrical &amp; Electronics Engineering, University of Rochester, 2012<br />
+                    M.S., Electrical &amp; Electronics Engineering, University of Rochester, 2005<br />
+                    B.S., Electrical &amp; Electronics Engineering, Bilkent University, 2000
+                  </p>
+                  <p class="email">📧 <a href="mailto:oktay.altun@bogazici.edu.tr">oktay.altun@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
+              <!-- Ercan Atam -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/atam.jpg" alt="Ercan Atam">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/atam.html">Assoc. Prof. Ercan Atam</a></h3>
+                  <p>
+                    Ph.D., Mechanical Engineering, Boğaziçi University, 2010<br />
+                    M.Sc., Mechanical Engineering, Boğaziçi University, 2005<br />
+                    B.Sc., Mechanical Engineering, Boğaziçi University, 2002
+                  </p>
+                  <p class="email">📧 <a href="mailto:ercan.atam@bogazici.edu.tr">ercan.atam@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-							</div>
-						</section>
-					</article>
+              <!-- Mustafa Taha Koçyiğit -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/kocyigit.jpg" alt="Mustafa Taha Koçyiğit">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/kocyigit.html">Assist. Prof. Mustafa Taha Koçyiğit</a></h3>
+                  <p>
+                    Ph.D., Computer Vision, The University of Edinburgh, 2023<br />
+                    M.Sc., Informatics, Technical University of Munich, 2018<br />
+                    B.Sc., Computer Engineering &amp; Physics, Boğaziçi University, 2016
+                  </p>
+                  <p class="email">📧 <a href="mailto:taha.kocyigit@bogazici.edu.tr">taha.kocyigit@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+              <!-- Şaziye Betül Özateş -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/ozates.jpg" alt="Şaziye Betül Özateş">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/ozates.html">Assist. Prof. Şaziye Betül Özateş</a></h3>
+                  <p>
+                    Ph.D., Computer Engineering, Boğaziçi University, 2022<br />
+                    M.S., Computer Engineering, Boğaziçi University, 2014<br />
+                    B.Sc., Computer Engineering, Boğaziçi University, 2012
+                  </p>
+                  <p class="email">📧 <a href="mailto:saziye.ozates@bogazici.edu.tr">saziye.ozates@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-			</div>
+              <!-- Şener Özönder -->
+              <div class="faculty-card">
+                <div class="photo">
+                  <img src="images/ozonder.jpg" alt="Şener Özönder">
+                </div>
+                <div class="info">
+                  <h3><a href="https://boundsai.github.io/ozonder.html">Assoc. Prof. Şener Özönder</a></h3>
+                  <p>
+                    Ph.D., Physics, University of Minnesota, 2013<br />
+                    M.S., Physics, Middle East Technical University, 2007<br />
+                    B.Sc., Physics, Middle East Technical University, 2005
+                  </p>
+                  <p class="email">📧 <a href="mailto:sener.ozonder@bogazici.edu.tr">sener.ozonder@bogazici.edu.tr</a></p>
+                </div>
+              </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            </div>
+          </div>
+        </section>
+      </article>
 
-	</body>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Boğaziçi DSAI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
