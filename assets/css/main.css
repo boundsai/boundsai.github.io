@@ -2173,6 +2173,53 @@ input, select, textarea {
 	dl {
 		margin: 0 0 2em 0;
 	}
+/* =========================================================
+   Labs v2: left box = name, right box = description
+   ========================================================= */
+
+ul.features.labs2 {
+  align-items: stretch; /* make name/desc boxes same height */
+}
+
+/* Make the whole box clickable, remove underline */
+ul.features.labs2 .lab-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border-bottom: none;
+}
+
+/* LEFT box (lab name) */
+ul.features.labs2 li.lab-name .lab-card-link {
+  padding: 2.6em 2.2em;
+}
+
+ul.features.labs2 li.lab-name h3 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 1.35em;
+  line-height: 1.25;
+}
+
+/* RIGHT box (description) */
+ul.features.labs2 li.lab-desc .lab-card-link {
+  padding: 2.6em 2.2em;
+}
+
+ul.features.labs2 li.lab-desc p {
+  margin: 0;
+}
+
+/* optional “Learn more” line */
+ul.features.labs2 li.lab-desc .learn-more {
+  margin-top: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.8em;
+  opacity: 0.9;
+}
 
 /* Actions */
 
